@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="coventry.biraj.twitter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/twitter"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="coventry.biraj.tweet.registeractivities.InfoActivity"></activity>
+        <activity android:name="coventry.biraj.tweet.CreateAccountActivity" />
+        <activity android:name="coventry.biraj.tweet.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="coventry.biraj.tweet.AddTweetActivity" />
+        <activity android:name="coventry.biraj.tweet.registeractivities.RegisterActivity" />
+        <activity android:name="coventry.biraj.tweet.LoginActivity" />
+        <activity android:name="coventry.biraj.tweet.DashActivity" />
+    </application>
+
+</manifest>
